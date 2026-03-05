@@ -1,0 +1,100 @@
+* {
+  color: white;
+}
+
+body {
+  font-family: Arial;
+  width: 290px;
+  background-color: rgb(24, 27, 29);
+  border-radius: 30px;
+  padding: 15px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+/* container around list */
+
+.history-container {
+  background: rgb(60, 60, 60);
+  border-radius: 12px;
+  padding: 8px;
+  margin-top: 10px;
+  position: relative;
+}
+
+/* scrollable list */
+
+#history {
+  max-height: 200px;
+  overflow-y: auto;
+  padding-left: 15px;
+  margin: 0;
+}
+
+/* hide scrollbar */
+
+#history::-webkit-scrollbar {
+  display: none;
+}
+
+#history {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+li {
+  margin: 5px 0;
+}
+
+/* arrow button */
+
+.scroll-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+  display: none;
+  font-weight: bold;
+}
+
+/* buttons */
+
+.buttons {
+  margin-top: 10px;
+  display: flex;
+  gap: 6px;
+  margin: 20px 0px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 50px;
+  background-color: rgb(13, 142, 228);
+  padding: 10px 12px;
+}
+
+#clear {
+  background-color: red;
+}
+
+.cred {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 5px;
+}
+
+img {
+  width: 20px;
+}

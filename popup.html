@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h2>Attendance Tracker</h2>
+
+    <div id="stats"></div>
+
+    <div class="history-container">
+      <ul id="history"></ul>
+      <button id="scrollDown" class="scroll-btn">&#8659;</button>
+    </div>
+
+    <div class="buttons">
+      <button id="download">Export CSV</button>
+      <button id="importBtn">Import CSV</button>
+      <button id="clear">Clear</button>
+    </div>
+
+    <input type="file" id="fileInput" accept=".csv" style="display: none" />
+
+    <hr />
+    <div class="cred">
+      <span>Developed by Divyansh Bajpai.</span>
+      <a href="https://linkedin.com/in/divyanshbajpai27" target="_blank">
+        <img src="linkedin-svgrepo-com.svg" alt="divyanshbajpai27" />
+      </a>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

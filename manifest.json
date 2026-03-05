@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Training Attendance Tracker",
+  "version": "1.0",
+  "description": "Tracks training attendance locally.",
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://mml.accenture.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
